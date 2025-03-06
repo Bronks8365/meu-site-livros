@@ -1,3 +1,3 @@
-function detalhesLivro(url) {
-    window.location.href = url;
+function detalhesLivro(pagina) {
+    window.location.href = pagina;
 }
