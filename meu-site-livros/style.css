@@ -1,21 +1,26 @@
 body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5dc;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f5f5dc;
+    margin: 0;
 }
 
 .estante {
     display: flex;
-    gap: 15px;
+    gap: 10px;
+    background: #8B4513;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .livro {
-    width: 80px;
-    height: 120px;
-    background-color: brown;
-    transition: transform 0.3s;
+    width: 60px;
+    height: 100px;
+    background: #D2691E;
+    transition: transform 0.3s ease-in-out;
     cursor: pointer;
 }
 
