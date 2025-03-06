@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5dc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.estante {
+    display: flex;
+    gap: 10px;
+    background: #8B4513;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.livro {
+    width: 60px;
+    height: 100px;
+    background: #D2691E;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.livro:hover {
+    transform: translateY(-20px);
+}
