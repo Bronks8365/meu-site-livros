@@ -8,15 +8,27 @@ body {
 
 .biblioteca {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: #8B5A2B;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .livro {
     position: relative;
-    width: 200px;
-    height: 300px;
+    width: 120px;
+    height: 180px;
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    transform: rotateY(0deg);
+}
+
+.livro:hover {
+    transform: translateY(-20px) rotateY(0deg);
 }
 
 .capa {
@@ -28,15 +40,17 @@ body {
 
 .info {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    background: rgba(0, 0, 0, 0.9);
     color: white;
     padding: 10px;
-    border-radius: 0 0 5px 5px;
+    border-radius: 5px;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
+    text-align: center;
 }
 
 .livro:hover .info {
